@@ -73,14 +73,18 @@ ggplot()+
   geom_bar(data=iris, mapping = aes(x=Species, fill=Species,alpha=0.5))+
   scale_fill_brewer(palette="Dark2")+
   theme_minimal()
+#直方图
 ggplot()+
   geom_boxplot(data=iris, mapping = aes(y=Sepal.Length, fill=Species,alpha=0.5))+
   scale_fill_brewer(palette="Dark2")+
   theme_minimal()
+#箱形图
 ggplot()+
   geom_point(data=iris, mapping = aes(x=Sepal.Width,y=Sepal.Length, color=Species,alpha=0.5))+
   scale_color_brewer(palette="Dark2")+
   theme_minimal()
+#散点图
+
 #install.packages("GGally")
 library(GGally)
 library(ggplot2)
